@@ -1,10 +1,17 @@
 namespace WinFormsApp
 {
-    public partial class Form1 : Form
+    public partial class frmPrincipal : Form
     {
-        public Form1()
+        public frmPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            //
+
+
         }
     }
 }

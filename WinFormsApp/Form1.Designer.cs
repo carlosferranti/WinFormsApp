@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp
 {
-    partial class Form1
+    partial class frmPrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnFinalizar = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnFinalizar
+            // 
+            this.btnFinalizar.Location = new System.Drawing.Point(713, 12);
+            this.btnFinalizar.Name = "btnFinalizar";
+            this.btnFinalizar.Size = new System.Drawing.Size(75, 23);
+            this.btnFinalizar.TabIndex = 0;
+            this.btnFinalizar.Text = "Finalizar";
+            this.btnFinalizar.UseVisualStyleBackColor = true;
+            // 
+            // frmPrincipal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.btnFinalizar);
+            this.Name = "frmPrincipal";
+            this.Text = "Principal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Button btnFinalizar;
     }
 }
