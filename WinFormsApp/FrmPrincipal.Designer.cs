@@ -46,7 +46,7 @@
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(24, 36);
+            this.lblID.Location = new System.Drawing.Point(12, 9);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(18, 15);
             this.lblID.TabIndex = 1;
