@@ -1,3 +1,6 @@
+using System.Diagnostics.Metrics;
+using System.Windows.Forms;
+
 namespace WinFormsApp
 {
     public partial class frmPrincipal : Form
@@ -16,15 +19,33 @@ namespace WinFormsApp
 
         private void btnFinalizar_Click(object sender, EventArgs e)
         {
-            //
+            //if (e.CloseReason != CloseReason.UserClosing)
+            //    return;
+
+            if (MessageBox.Show("Deseja realmente sair?", "Sair", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                Application.Exit();
         }
 
         private void btnSobre_Click(object sender, EventArgs e)
         {
-            FrmSobre frmSobre  = new FrmSobre();
+            FrmSobre frmSobre = new FrmSobre();
             frmSobre.ShowDialog();
-            if (frmSobre.IsDisposed)
-                Close();
+            //if (frmSobre.IsDisposed)
+            //    Hide();
+
+            //FrmSobre frmSobre  = new FrmSobre();
+            //frmSobre.ShowDialog();
+            //if (frmSobre.IsDisposed)
+            //    Hide();
+        }
+
+        private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason != CloseReason.UserClosing)
+                return;
+            
+            e.Cancel = true;
+
         }
     }
 }
