@@ -18,5 +18,13 @@ namespace WinFormsApp
         {
             //
         }
+
+        private void btnSobre_Click(object sender, EventArgs e)
+        {
+            FrmSobre frmSobre  = new FrmSobre();
+            frmSobre.ShowDialog();
+            if (frmSobre.IsDisposed)
+                Close();
+        }
     }
 }
