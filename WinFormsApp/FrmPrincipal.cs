@@ -18,10 +18,7 @@ namespace WinFormsApp
         }
 
         private void btnFinalizar_Click(object sender, EventArgs e)
-        {
-            //if (e.CloseReason != CloseReason.UserClosing)
-            //    return;
-
+        {            
             if (MessageBox.Show("Deseja realmente sair?", "Aviso", 
                 MessageBoxButtons.OKCancel, 
                 MessageBoxIcon.Warning) == DialogResult.OK)
@@ -32,11 +29,6 @@ namespace WinFormsApp
         {
             FrmSobre frmSobre = new FrmSobre();
             frmSobre.ShowDialog();
-            //if (frmSobre.IsDisposed)
-            //    Hide();
-
-            //FrmSobre frmSobre  = new FrmSobre();
-            //frmSobre.ShowDialog();
             //if (frmSobre.IsDisposed)
             //    Hide();
         }
