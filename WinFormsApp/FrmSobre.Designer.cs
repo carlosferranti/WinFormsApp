@@ -45,6 +45,7 @@
             // lblApp
             // 
             this.lblApp.AutoSize = true;
+            this.lblApp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblApp.Location = new System.Drawing.Point(25, 18);
             this.lblApp.Name = "lblApp";
             this.lblApp.Size = new System.Drawing.Size(32, 15);
@@ -58,10 +59,13 @@
             this.ClientSize = new System.Drawing.Size(541, 283);
             this.Controls.Add(this.lblApp);
             this.Controls.Add(this.btnSair);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmSobre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmSobre";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmSobre_FormClosing);
+            this.Load += new System.EventHandler(this.FrmSobre_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
