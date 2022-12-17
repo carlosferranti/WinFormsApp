@@ -22,7 +22,9 @@ namespace WinFormsApp
             //if (e.CloseReason != CloseReason.UserClosing)
             //    return;
 
-            if (MessageBox.Show("Deseja realmente sair?", "Sair", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show("Deseja realmente sair?", "Aviso", 
+                MessageBoxButtons.OKCancel, 
+                MessageBoxIcon.Warning) == DialogResult.OK)
                 Application.Exit();
         }
 
