@@ -13,5 +13,10 @@ namespace WinFormsApp
 
 
         }
+
+        private void btnFinalizar_Click(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }
