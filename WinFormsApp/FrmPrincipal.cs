@@ -14,7 +14,6 @@ namespace WinFormsApp
         {
             //
 
-
         }
 
         private void btnFinalizar_Click(object sender, EventArgs e)
@@ -28,9 +27,7 @@ namespace WinFormsApp
         private void btnSobre_Click(object sender, EventArgs e)
         {
             FrmSobre frmSobre = new FrmSobre();
-            frmSobre.ShowDialog();
-            //if (frmSobre.IsDisposed)
-            //    Hide();
+            frmSobre.ShowDialog();           
         }
 
         private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
@@ -39,16 +36,13 @@ namespace WinFormsApp
                 return;
             
             e.Cancel = true;
-
         }
 
         private void btnCadClientes_Click(object sender, EventArgs e)
         {
             FrmClientes frmClientes = new FrmClientes();
             frmClientes.ShowDialog();
-            frmClientes.Dispose();
-            //if (frmSobre.IsDisposed)
-            //    Hide();
+            frmClientes.Dispose();           
         }
     }
 }
