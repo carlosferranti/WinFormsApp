@@ -44,8 +44,9 @@ namespace WinFormsApp
 
         private void btnCadClientes_Click(object sender, EventArgs e)
         {
-            FrmSobre frmSobre = new FrmSobre();
-            frmSobre.ShowDialog();
+            FrmClientes frmClientes = new FrmClientes();
+            frmClientes.ShowDialog();
+            frmClientes.Dispose();
             //if (frmSobre.IsDisposed)
             //    Hide();
         }

@@ -134,6 +134,11 @@ namespace WinFormsApp
                 btnCancelar.Enabled = true;
             }
         }
+
+        private void panelPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 
