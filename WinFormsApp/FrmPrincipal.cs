@@ -18,9 +18,9 @@ namespace WinFormsApp
 
         private void btnFinalizar_Click(object sender, EventArgs e)
         {            
-            if (MessageBox.Show("Deseja realmente sair?", "Aviso", 
-                MessageBoxButtons.OKCancel, 
-                MessageBoxIcon.Warning) == DialogResult.OK)
+            //if (MessageBox.Show("Deseja realmente sair?", "Aviso", 
+            //    MessageBoxButtons.OKCancel, 
+            //    MessageBoxIcon.Warning) == DialogResult.OK)
                 Application.Exit();
         }
 
