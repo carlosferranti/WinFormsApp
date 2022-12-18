@@ -41,5 +41,13 @@ namespace WinFormsApp
             e.Cancel = true;
 
         }
+
+        private void btnCadClientes_Click(object sender, EventArgs e)
+        {
+            FrmSobre frmSobre = new FrmSobre();
+            frmSobre.ShowDialog();
+            //if (frmSobre.IsDisposed)
+            //    Hide();
+        }
     }
 }
