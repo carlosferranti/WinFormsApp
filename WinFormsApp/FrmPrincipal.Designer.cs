@@ -31,13 +31,15 @@
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.lblID = new System.Windows.Forms.Label();
             this.btnSobre = new System.Windows.Forms.Button();
+            this.btnCadClientes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnFinalizar
             // 
-            this.btnFinalizar.Location = new System.Drawing.Point(713, 12);
+            this.btnFinalizar.Location = new System.Drawing.Point(1019, 20);
+            this.btnFinalizar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.Size = new System.Drawing.Size(75, 23);
+            this.btnFinalizar.Size = new System.Drawing.Size(107, 38);
             this.btnFinalizar.TabIndex = 0;
             this.btnFinalizar.Text = "Finalizar";
             this.btnFinalizar.UseVisualStyleBackColor = true;
@@ -46,30 +48,45 @@
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(12, 9);
+            this.lblID.Location = new System.Drawing.Point(17, 15);
+            this.lblID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(18, 15);
+            this.lblID.Size = new System.Drawing.Size(30, 25);
             this.lblID.TabIndex = 1;
             this.lblID.Text = "ID";
             // 
             // btnSobre
             // 
-            this.btnSobre.Location = new System.Drawing.Point(713, 50);
+            this.btnSobre.Location = new System.Drawing.Point(1019, 83);
+            this.btnSobre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSobre.Name = "btnSobre";
-            this.btnSobre.Size = new System.Drawing.Size(75, 23);
+            this.btnSobre.Size = new System.Drawing.Size(107, 38);
             this.btnSobre.TabIndex = 2;
             this.btnSobre.Text = "Sobre";
             this.btnSobre.UseVisualStyleBackColor = true;
             this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click);
             // 
+            // btnCadClientes
+            // 
+            this.btnCadClientes.Location = new System.Drawing.Point(1019, 275);
+            this.btnCadClientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCadClientes.Name = "btnCadClientes";
+            this.btnCadClientes.Size = new System.Drawing.Size(107, 38);
+            this.btnCadClientes.TabIndex = 3;
+            this.btnCadClientes.Text = "Clientes";
+            this.btnCadClientes.UseVisualStyleBackColor = true;
+            this.btnCadClientes.Click += new System.EventHandler(this.btnCadClientes_Click);
+            // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1178, 784);
+            this.Controls.Add(this.btnCadClientes);
             this.Controls.Add(this.btnSobre);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.btnFinalizar);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPrincipal";
@@ -87,5 +104,6 @@
         private Button btnFinalizar;
         private Label lblID;
         private Button btnSobre;
+        private Button btnCadClientes;
     }
 }
